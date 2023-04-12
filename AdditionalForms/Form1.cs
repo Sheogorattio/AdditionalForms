@@ -13,7 +13,7 @@ namespace AdditionalForms
 {
     public partial class Form1 : Form
     {
-        string pathToFolder = "C://";
+        string pathToFolder = "C:\\";
         string mask = null;
         public Form1()
         {
@@ -26,7 +26,7 @@ namespace AdditionalForms
             {
                 listBox1.Items.Clear();
                 mask = this.textBox1.Text;
-                if(mask.Length <1) { throw new Exception("Wrong file serch mask."); }
+                if(mask.Length <1) { throw new Exception("Wrong file search mask."); }
                 DialogResult res = folderBrowserDialog1.ShowDialog();
                 if (res == DialogResult.OK)
                 {
